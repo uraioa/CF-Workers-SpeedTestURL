@@ -7,8 +7,8 @@ export default {
     let bytes;
     // 判断路径是否为空
     if (!path) {
-      // 路径为空，将 bytes 赋值为 200MB
-      bytes = 200000000;
+      // 路径为空，将 bytes 赋值为 300MB
+      bytes = 300000000;
     } else if (path === "locations") {
       let targetUrl = `http${isSecure ? 's' : ''}://speed.cloudflare.com/locations`;
       let cfRequest = new Request(targetUrl, request);
